@@ -1,0 +1,40 @@
+name: ip_camera_viewer
+description: IP Camera RTSP Viewer - YoSee, Hikvision, Dahua, Generic
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # RTSP player
+  flutter_vlc_player: ^7.4.1
+
+  # State management — dùng flutter_riverpod thuần, không dùng riverpod_annotation
+  flutter_riverpod: ^2.5.1
+
+  # Database
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  path_provider: ^2.1.3
+
+  # UI
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  wakelock_plus: ^1.2.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  # Bỏ riverpod_generator để tránh xung đột với isar_generator
+  isar_generator: ^3.1.0+1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
