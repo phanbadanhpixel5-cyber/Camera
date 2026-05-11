@@ -1,4 +1,3 @@
-
 name: ip_camera_viewer
 description: Ứng dụng xem camera IP RTSP
 publish_to: 'none'
